@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Framework", "Service.Framework\Service.Framework.csproj", "{B2A54523-5630-42EF-96FF-F391A49A10A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway", "Gateway\Gateway.csproj", "{EC31F01A-814F-443A-85FF-82C0FDF9E016}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway", "Gateway\Gateway.csproj", "{EC31F01A-814F-443A-85FF-82C0FDF9E016}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PollyConsole", "PollyConsole\PollyConsole.csproj", "{85FAD6AD-CA8D-4884-935A-9DD00E730683}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceC", "ServiceC\ServiceC.csproj", "{25EAD7E5-CD87-4A64-BB03-DFB25E82C180}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{EC31F01A-814F-443A-85FF-82C0FDF9E016}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC31F01A-814F-443A-85FF-82C0FDF9E016}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC31F01A-814F-443A-85FF-82C0FDF9E016}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85FAD6AD-CA8D-4884-935A-9DD00E730683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85FAD6AD-CA8D-4884-935A-9DD00E730683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85FAD6AD-CA8D-4884-935A-9DD00E730683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85FAD6AD-CA8D-4884-935A-9DD00E730683}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25EAD7E5-CD87-4A64-BB03-DFB25E82C180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25EAD7E5-CD87-4A64-BB03-DFB25E82C180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25EAD7E5-CD87-4A64-BB03-DFB25E82C180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25EAD7E5-CD87-4A64-BB03-DFB25E82C180}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

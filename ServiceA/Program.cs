@@ -1,3 +1,5 @@
+﻿using Service.Framework.Model;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
@@ -22,7 +24,33 @@ app.UseHttpsRedirection();
 
 app.MapGet("/test", (IConfiguration configuration) =>
 {
-    return $"{Assembly.GetExecutingAssembly().FullName};��ǰʱ�䣺{DateTime.Now:G};Port��{configuration["ConsulRegisterOptions:Port"]}";
+    return $"{Assembly.GetExecutingAssembly().FullName};当前时间：{DateTime.Now:G};Port：{configuration["ConsulRegisterOptions:Port"]}";
+});
+
+// 定义超时调用的APi
+app.MapGet("/api/polly/timeout", () =>
+{
+    Thread.Sleep(6000);
+    return "Polly Timeout";
+});
+
+// 定义500结果的APi
+app.MapGet("/api/polly/500", (HttpContext context) =>
+{
+    context.Response.StatusCode = 500;
+    return "fail";
+});
+
+// 定义/api/user
+app.MapGet("/api/user/1", () =>
+{
+    var user = new User
+    {
+        Id = 20001,
+        Name = "Mamba24",
+    };
+
+    return user;
 });
 
 app.Run();
